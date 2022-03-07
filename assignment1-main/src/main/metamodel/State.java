@@ -29,8 +29,12 @@ public class State {
 	}
 
 	public Transition getTransitionByEvent(String string) {
-		// TODO Auto-generated method stub
-		return null;
+		for (Transition tran : trans) {	
+			
+			   if (tran.getEvent().toString().compareTo(string)==0) return tran;	
+			}
+		
+			return null;	
 	}
 
 }
